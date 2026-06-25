@@ -15,6 +15,7 @@ import (
 	"github.com/crowdstrike/terraform-provider-crowdstrike/internal/fcs"
 	"github.com/crowdstrike/terraform-provider-crowdstrike/internal/fim"
 	hostgroups "github.com/crowdstrike/terraform-provider-crowdstrike/internal/host_groups"
+	imageassessmentpolicyexclusions "github.com/crowdstrike/terraform-provider-crowdstrike/internal/image_assessment_policy_exclusions"
 	installtoken "github.com/crowdstrike/terraform-provider-crowdstrike/internal/install_token"
 	ioaexclusion "github.com/crowdstrike/terraform-provider-crowdstrike/internal/ioa_exclusion"
 	ioarulegroup "github.com/crowdstrike/terraform-provider-crowdstrike/internal/ioa_rule_group"
@@ -60,4 +61,5 @@ func registerSweepers() {
 	usergroup.RegisterSweepers()
 	rtrscript.RegisterSweepers()
 	customioc.RegisterSweepers()
+	imageassessmentpolicyexclusions.RegisterSweepers()
 }
